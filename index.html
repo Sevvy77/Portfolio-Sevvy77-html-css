@@ -9,49 +9,66 @@
 </head>
 <body>
     <header>
-        <h1>This is my portfolio</h1>
+        <h1>Isaac Severing's portfolio</h1>
     </header>
+    <img src="assets/images/isaac_senior_0105_3105876699624.jpg" alt="An image of Isaac Severing sitting on concrete stairs with bricks behind him. He is wearing a sweater and smiling.">
+    </img>
     <nav>
-        <a href="#">My Mantra</a>
-        <a href="#">What I am Looking for</a>
-        <a href="#">Contact me</a>
+        <a href="#myMantra" id="link">My Mantra</a>
+        <a href="#whatIAmLookingFor" id="link">What I am Looking for</a>
+        <a href="#myProjectsToDate" id="link">My projects, to-date</a>
+        <a href="#contactMe" id="link">Contact me</a>
     </nav>
     <main>
-        <section>
+        <a name="myMantra"></a>
+        <section class="differentBackgroundColor">
             <h2>My Mantra</h2>
             <h3>learning as a career</h3>
             <ul>
-                <li>development is a skill I'll be growing in throughout my career</li>
-                <li>there's no limit to the ammount of solutions to problems in development, but there are solutions that are faster and more stable.</li>
-                <li>bugs and headaches in today's work CAN make me better equipped for tommorow's bugs and headaches</li>
+                <li>Development is a skill I'll be growing in throughout my career.</li>
+                <li>There's no limit to the ammount of solutions to problems in development, but there are solutions that are faster and more stable.</li>
+                <li>Bugs and headaches in today's work CAN make me better equipped for tommorow's bugs and headaches.</li>
             </ul>
         </section>
+        <a name="whatIAmLookingFor"></a>
         <section>
             <h2>What I am Looking for</h2>
             <h3>learning skills, good vision</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus magni deserunt perspiciatis architecto laborum officia ipsam molestiae! Ullam ex iure nobis nulla tempore! Cum, repellendus tempore doloribus velit deserunt odit!</p>
+            <p>I would like to move into a team lead position, so I am looking for a job that will emphasize teamwork in development, allowing me to grow in my leadership skills. The company should have a realistic vision of growth, or at least of raising up leadership from qualified developers.</p>
         </section>
-        <section>
+        <a name="myProjectsToDate"></a>
+        <section class="differentBackgroundColor">
             <h2>My projects, to-date</h2>
             <nav>
                 <!--add tooltips here-->
-                <a href="#">Website commissions</a>
-                <a href="#">Refactoring Coursework repository</a>
-                <a href="#">Refactoring Coursework live application</a>
+                <a href="#" id="link" class="pictureLink">Website commissions</a>
+                <div class="pictureLink"> 
+                    <a href="https://github.com/Sevvy77/SEO-Refactor-HTML-Horizon" id="link">
+                        <img class="thumbnail" src="./assets/images/Screenshot 2022-01-26 200519.png"></img>
+                    </a>
+                    <p>Refactoring Coursework Repository</p>
+                </div>
+                <div class="pictureLink"> 
+                    <a href="https://sevvy77.github.io/SEO-Refactor-HTML-Horizon/" id="link">
+                        <img class="thumbnail" src="./assets/images/Screenshot 2022-01-26 194157.png"></img>
+                    </a>
+                    <p>Refactoring Coursework live application</p>
+                </div>
             </nav>
         </section>
+        <a name="contactMe"></a>
         <nav>
             <h2>Contact information</h2>
             <!--add tooltips here-->
-            <a href="#">Github</a>
-            <a href="#">Linkedin</a>
-            <a href="#">Instagram</a>
-            <p>6149008095</p>
-            <p>I.N.Severing@gmail.com</p>
+            <a href="https://github.com/Sevvy77" id="link">Github</a>
+            <a href="https://www.linkedin.com/in/isaac-severing-33a881214/" id="link">Linkedin</a>
+            <a href="https://www.instagram.com/_severing/" id="link">Instagram</a>
+            <p id="link">6149008095</p>
+            <p id="link">I.N.Severing@gmail.com</p>
         </nav>
     </main>
     <footer>
-        <h3>Thank you for your interest, feel free to reach out to any listed above Contact</h3>
+        <h3>Thank you for your interest, feel free to reach out to any contact listed above.</h3>
     </footer>
 </body>
 </html>

@@ -1,23 +1,97 @@
 :root {
+    --bc1: #2f5233;
+    --bc2: #b1d8b7;
+    --bc3: #777;
+    --bc4: #333;
+    --tc1: #cfcfcf;
+    --tc2: #d7e5f0;
+    --standardSpacing: 10px;
+}
 
+html {
+    display: flex;
+    background: linear-gradient(90deg, var(--bc1), 60%, var(--bc2));
 }
 
 body {
+    margin: var(--standardSpacing);
+    display: flex;
+    height: 150vmax;
+    width: 90vw;
+    flex-flow:column nowrap;
+    align-items: center;
+}
 
+body * {
+    margin: var(--standardSpacing);
+    border: var(--standardSpacing);
+    padding: var(--standardSpacing);
+    background-color: var(--bc4);
+    color: var(--tc1);
 }
 
 header {
-
+    border-bottom: var(--standardSpacing);
+    top: 0px;
+    position: relative;
+    width: 100%;
+    background-color: var(--bc3);
 }
 
 nav {
-
+    display: flex;
+    justify-content: space-around;
 }
 
 main {
-
+    padding-top: 100px;
+    width: 90%;
 }
 
 footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    border-top: var(--standardSpacing);
+}
 
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+#link {
+    color: var(--tc2);
+    background-color: var(--bc3);
+    padding: 20px;
+    
+}
+
+img {
+    max-height: 400px;
+}
+
+main section {
+    min-height: 300px;
+}
+
+
+.differentBackgroundColor {
+    background-color: var(--bc3);
+}
+
+.thumbnail {
+    max-height: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.thumbnail:hover {
+    max-height: 200px;
+    position: absolute;
+}
+
+@media screen and (max-width: {
+    
 }
