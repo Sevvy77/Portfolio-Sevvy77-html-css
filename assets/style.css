@@ -1,3 +1,4 @@
+/*setting color variables and spacing standards for the whole application*/
 :root {
     --bc1: #2f5233;
     --bc2: #b1d8b7;
@@ -7,17 +8,20 @@
     --tc2: #d7e5f0;
     --standardSpacing: 10px;
 }
-
+/*trying to make a color gradient background that plays nice with all viewports*/
 html {
-    display: flex;
     background: linear-gradient(90deg, var(--bc1), 60%, var(--bc2));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
 }
-
+/*setting the size of the body that contains all of my elements, as well as the flow for those elements.*/
 body {
     margin: var(--standardSpacing);
     display: flex;
     height: 150vmax;
-    width: 90vw;
+    width: 100vw;
     flex-flow:column nowrap;
     align-items: center;
 }
@@ -29,7 +33,7 @@ body * {
     background-color: var(--bc4);
     color: var(--tc1);
 }
-
+/*styling all aspects of the body through line 107*/
 header {
     border-bottom: var(--standardSpacing);
     top: 0px;
@@ -60,14 +64,14 @@ h2,
 h3 {
     text-align: center;
 }
-
+/*setting styles for my hyperlinks to overwrite the end user stylesheet*/
 #link {
     color: var(--tc2);
     background-color: var(--bc3);
     padding: 20px;
     
 }
-
+/*setting up boundaries for images and such to make sure that they don't take up too much real-estate.*/
 img {
     max-height: 400px;
 }
@@ -76,7 +80,7 @@ main section {
     min-height: 300px;
 }
 
-
+/*breaking up the monochromatic feel of the application without this code in it*/
 .differentBackgroundColor {
     background-color: var(--bc3);
 }
@@ -86,12 +90,49 @@ main section {
     padding: 0px;
     margin: 0px;
 }
-
+/*adding a growth behavior to this element, might have gone for an animation if I was more experienced or had more time.*/
 .thumbnail:hover {
     max-height: 200px;
     position: absolute;
 }
-
-@media screen and (max-width: {
+/*adding flex properties that make the contained elements play nice with each-other*/
+#media {
+    display: flex;
+    flex-flow: row wrap;
     
 }
+
+#media *{
+    flex-basis: 1;
+}
+
+/*setting different styles for smaller screens*/
+@media screen and (max-width: 1024px) {
+    section.differentBacgroundColor {
+        flex-flow: column nowrap;
+    }
+    img {
+        max-height: 30vh;
+    }
+    main section {
+        min-height: 100px;
+    }
+    .pictureLink {
+        padding: 0px;
+        margin: 0px;
+    }
+    section nav {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    section nav {
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+    
+
